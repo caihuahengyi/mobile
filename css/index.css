@@ -20,9 +20,9 @@ html, body {
     overflow: hidden;
     font: 22px/2em "方正兰亭纤黑简体", Helvetica, Arial, sans-serif;
 }
-html{
+/*html{
     font-size:100px;
-}
+}*/
 .bg1{
     color:red;
 }
@@ -45,11 +45,11 @@ html{
     color:springgreen;
 }
 .music{
-    width: 0.6rem;
-    height: 0.6rem;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    top: 0.2rem;
-    right: 0.2rem;
+    top: 20px;
+    right: 20px;
     z-index: 99;
     background: url(../audio/music.svg) no-repeat;
     background-size:100% 100% ;
@@ -66,7 +66,7 @@ html{
         transform: rotate(0deg);
     }
     100%{
-        -webkit-transform: rotate(0deg);
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
@@ -1163,9 +1163,9 @@ html{
 .a6 p{
     position: absolute;
     z-index: 2;
-    top:2rem;
-    left:2rem;
-    font-size:0.4rem;
+    top:200px;
+    left:200px;
+    font-size:40px;
     color:gold;
     font-weight:900;
 }
@@ -1186,8 +1186,8 @@ html{
     top: 30%;
     left: 10%;
     /*margin: -2.55rem 0 0 -2.55rem;*/
-    width: 5.1rem;
-    height: 5.1rem;
+    width: 510px;
+    height: 510px;
 }
 
 .cubeBox {
@@ -1202,43 +1202,43 @@ html{
 }
 
 .cubeBox li:nth-child(1) {
-    -webkit-transform: translateZ(2.55rem);
-    transform: translateZ(2.55rem);
+    -webkit-transform: translateZ(255px);
+    transform: translateZ(255px);
     background: url("../images/web.jpg") no-repeat;
     background-size: 100% 100%;
 }
 
 .cubeBox li:nth-child(2) {
-    -webkit-transform: translateZ(-2.55rem) rotateY(180deg);
-    transform: translateZ(-2.55rem) rotateY(180deg);
+    -webkit-transform: translateZ(-255px) rotateY(180deg);
+    transform: translateZ(-255px) rotateY(180deg);
     background: url("../images/ajax.jpg") no-repeat;
     background-size: 100% 100%;
 }
 
 .cubeBox li:nth-child(3) {
-    -webkit-transform: rotateY(90deg) translateZ(2.55rem);
-    transform: rotateY(90deg) translateZ(2.55rem);
+    -webkit-transform: rotateY(90deg) translateZ(255px);
+    transform: rotateY(90deg) translateZ(255px);
     background: url("../images/css.jpg") no-repeat;
     background-size: 100% 100%;
 }
 
 .cubeBox li:nth-child(4) {
-    -webkit-transform: rotateY(-90deg) translateZ(2.55rem);
-    transform: rotateY(-90deg) translateZ(2.55rem);
+    -webkit-transform: rotateY(-90deg) translateZ(255px);
+    transform: rotateY(-90deg) translateZ(255px);
     background: url("../images/html.jpg") no-repeat;
     background-size: 100% 100%;
 }
 
 .cubeBox li:nth-child(5) {
-    -webkit-transform: rotateX(90deg) translateZ(2.55rem);
-    transform: rotateX(90deg) translateZ(2.55rem);
+    -webkit-transform: rotateX(90deg) translateZ(255px);
+    transform: rotateX(90deg) translateZ(255px);
     background: url("../images/node.jpg") no-repeat;
     background-size: 100% 100%;
 }
 
 .cubeBox li:nth-child(6) {
-    -webkit-transform: rotateX(-90deg) translateZ(2.55rem);
-    transform: rotateX(-90deg) translateZ(2.55rem);
+    -webkit-transform: rotateX(-90deg) translateZ(255px);
+    transform: rotateX(-90deg) translateZ(255px);
     background: url("../images/js.jpg") no-repeat;
     background-size: 100% 100%;
 }
@@ -1251,9 +1251,9 @@ html{
 }
 .a7 p:nth-child(2){
     position: absolute;
-    top:3rem;
-    left:1rem;
-    font-size: 0.4rem;
+    top:300px;
+    left:100px;
+    font-size: 40px;
     color:lime;
 }
 #a7 p:nth-child(2){
@@ -1269,9 +1269,9 @@ html{
 
 .a7 p:nth-child(3){
     position: absolute;
-    top:4rem;
-    left:1rem;
-    font-size: 0.3rem;
+    top:400px;
+    left:100px;
+    font-size: 30px;
     color:red;
 }
 #a7 p:nth-child(3){
@@ -1286,9 +1286,9 @@ html{
 }
 .a7 p:nth-child(3) span{
     position: absolute;
-    top:1rem;
-    left:2rem;
-    font-size: 0.4rem;
+    top:100px;
+    left:200px;
+    font-size: 40px;
     color:purple;
 }
 #a7 p:nth-child(3) span{
@@ -1303,9 +1303,9 @@ html{
 }
 .a7 p:nth-child(4){
     position: absolute;
-    top:5.5rem;
-    left:1rem;
-    font-size: 0.3rem;
+    top:550px;
+    left:100px;
+    font-size:30px;
     color:red;
 }
 #a7 p:nth-child(4){
@@ -1320,9 +1320,9 @@ html{
 }
 .a7 p:nth-child(4)>span{
     position: absolute;
-    top:1rem;
-    left:2rem;
-    font-size: 0.4rem;
+    top:100px;
+    left:200px;
+    font-size:40px;
     color:purple;
 }
 #a7 p:nth-child(4) span{
