@@ -65,29 +65,6 @@ function end(e) {  //手松开的时候
         this.firstElementChild.id = "a"+(this.index+1);
     },false);
 }
-/*
-/!*音乐*!/
-var beyond = document.querySelector("#beyond");
-var music = document.querySelector(".music");
-window.setTimeout(function () {
-    beyond.play();//音频文件播放,边缓存边播放
-    beyond.addEventListener("canplay", function () {
-        music.className = 'music musicMove';
-        music.style.opacity = 1;
-    });
-
-}, 1000);
-music.addEventListener("click", function () {
-    if (beyond.paused) {//停止
-        beyond.play();
-        music.className = 'music musicMove';
-    } else {//播放
-        beyond.pause();
-        music.className = 'music';
-    }
-});
-
-*/
 
 var $cubeBox = $('.cubeBox');
 
@@ -127,6 +104,27 @@ $cubeBox.on('touchend', function (ev) {
         }).css('transform', 'scale(0.6) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)');
     }
 });
+/*音乐*/
+var beyond = document.querySelector("#beyond");
+var music = document.querySelector(".music");
+window.setTimeout(function () {
+    beyond.play();//音频文件播放,边缓存边播放
+    beyond.addEventListener("canplay", function () {
+        music.className = 'music musicMove';
+        music.style.opacity = 1;
+    });
+
+}, 1000);
+music.addEventListener("click", function () {
+    if (beyond.paused) {//停止
+        beyond.play();
+        music.className = 'music musicMove';
+    } else {//播放
+        beyond.pause();
+        music.className = 'music';
+    }
+});
+
 
 
 
