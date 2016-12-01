@@ -65,7 +65,8 @@ function end(e) {  //手松开的时候
         this.firstElementChild.id = "a"+(this.index+1);
     },false);
 }
-/*音乐*/
+/*
+/!*音乐*!/
 var beyond = document.querySelector("#beyond");
 var music = document.querySelector(".music");
 window.setTimeout(function () {
@@ -86,6 +87,7 @@ music.addEventListener("click", function () {
     }
 });
 
+*/
 
 var $cubeBox = $('.cubeBox');
 
