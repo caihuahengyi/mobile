@@ -5,7 +5,7 @@ body, div, ul, li, p, h2, h3, h6, a {
     animation-fill-mode: both;*/
 }
 
-ul {
+ul,li{
     list-style: none;
 }
 
@@ -122,53 +122,41 @@ html{
 }
 
 
-/*-----------------------箭头-------------------------*/
-.icon-up {
-    position: absolute;
-    left: 50%;
-    bottom: 4%;
-    z-index: 999;
-    margin-left: -10px;
-    height: auto;
-    width: 20px;
+/*----------小箭头------------*/
+.icon_up{
+    position: fixed;
+    z-index: 99;
+    top:8.9rem;
+    left:50%;
+    margin-left: -0.25rem;
+    width:0.5rem;
+    height:0.28rem;
+    /*-webkit-animation: bounce  1.5s  infinite;
+    animation: bounce  1.5s  infinite;*/
 }
-
-.up-img {
-    -webkit-animation: moveToBottom ease 1.5s both infinite;
-    animation: moveToBottom ease 1.5s both infinite;
+.icon_up {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
-
-@-webkit-keyframes moveToBottom {
-    from {
-    }
-    to {
-        -webkit-transform: translateY(100%);
-        transform: translateY(100%);
-    }
-}
-
-@keyframes moveToBottom {
-    from {
-    }
-    to {
-        -webkit-transform: translateY(100%);
-        transform: translateY(100%);
-    }
-}
-
 #main {
     position: absolute;
     left: 50%;
     top: 0;
-    margin-left: -320px;
-    width: 640px;
-    height: 960px;
+    margin-left: -3.2rem;
+    width: 6.4rem;
+    height: 9.6rem;
     overflow: hidden;
     -webkit-transform-origin: top;
     transform-origin: top;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    perspective: 800px;
+    perspective: 8rem;
 }
 
 .zIndex {
@@ -236,16 +224,16 @@ html{
 /*-------------------第一张----------------------*/
 .a1-content {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 3rem;
+    height: 3rem;
     left: 50%;
     top: 40%;
-    margin: -170px 0 0 -170px;
+    margin: -1.7rem 0 0 -170px;
     border-radius: 50%;
     text-align: center;
-    border: 20px solid #fff;
+    border: 0.2rem solid #fff;
     background: rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0 0 10px 5px #ccc;
+    box-shadow: inset 0 0 0.1rem 0.05rem #ccc;
 }
 
 .a1-content img {
@@ -368,7 +356,7 @@ html{
 
 .a2-top p {
     padding-top: 10%;
-    font-size: 70px;
+    font-size: 0.7rem;
     text-align: center;
 }
 
@@ -394,9 +382,9 @@ html{
 #a2 .a2-top img:nth-of-type(3) {
     left: 50%;
     top: 55%;
-    width: 524px;
-    height: 124px;
-    margin-left: -262px;
+    width: 5.24rem;
+    height: 1.24rem;
+    margin-left: -2.62rem;
 }
 
 /*-------------------第二张下面----------------------*/
@@ -412,9 +400,9 @@ html{
 .a2-bot > img:nth-of-type(1) {
     top: 20%;
     left: 54%;
-    margin-left: -99px;
-    width: 198px;
-    height: 192px;
+    margin-left: -0.99rem;
+    width: 1.98rem;
+    height: 1.92rem;
     -webkit-animation-name: myBg;
     animation-name: myBg;
     -webkit-animation-duration: 3s;
@@ -523,16 +511,16 @@ html{
     position: absolute;
     top: 29%;
     left: 47%;
-    font-size: 34px;
-    letter-spacing: 16px;
+    font-size: 0.34rem;
+    letter-spacing: 0.16rem;
 }
 
 .a2-bot p {
     position: absolute;
     top: 56%;
     left: 34%;
-    font-size: 26px;
-    letter-spacing: 2px;
+    font-size: 0.26rem;
+    letter-spacing: 0.02rem;
 }
 
 /*-------------------第三张----------------------*/
@@ -542,11 +530,11 @@ html{
 }
 
 .a3-top span {
-    font-size: 60px;
+    font-size: 0.60rem;
     position: absolute;
     left: 50%;
-    margin-left:-102px;
-    top: 150px;
+    margin-left:-1.02rem;
+    top: 1.50rem;
 }
 #a3 .a3-top>span {
     -webkit-animation-name: swing;
@@ -594,8 +582,8 @@ html{
 .a3-Right p {
     position: absolute;
     left: -150%;
-    line-height: 42px;
-    font-size: 24px;
+    line-height: 0.42rem;
+    font-size: 0.24rem;
 }
 
 .a3-RightBot {
@@ -722,21 +710,21 @@ html{
 }
 
 .a4-top h2 {
-    line-height: 80px;
-    font-size: 60px;
+    line-height: 0.80rem;
+    font-size: 0.60rem;
 }
 
 .a4-top span {
-    font-size: 36px;
+    font-size: 0.36rem;
 }
 
 .a4-content {
     position: absolute;
     top: 20%;
     left: 50%;
-    margin-left: -217px;
-    width: 434px;
-    height: 396px;
+    margin-left: -2.17rem;
+    width: 4.34rem;
+    height: 3.96rem;
     background: url("../images/a4-content.png") no-repeat;
 }
 
@@ -744,9 +732,9 @@ html{
     position: absolute;
     top: 31%;
     left: 29%;
-    width: 170px;
-    height: 170px;
-    border: 2px dashed #ccc;
+    width: 1.70rem;
+    height: 1.70rem;
+    border: 0.02rem dashed #ccc;
     border-radius: 50%;
     -webkit-animation: a4-animations 1s infinite linear;
     animation: a4-animations 1s infinite linear;
@@ -802,9 +790,9 @@ html{
     position: absolute;
     left: 50%;
     top: 50%;
-    margin: -36px 0 0 -31px;
-    width: 50px;
-    height: 50px;
+    margin: -0.36rem 0 0 -0.31rem;
+    width: 0.50rem;
+    height: 0.50rem;
     -webkit-transform: rotate(0deg); /*rotate 旋转*/
 }
 
@@ -918,15 +906,15 @@ html{
 }
 
 .a4-bot p span {
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 0.30rem;
+    font-size: 0.20rem;
     display: inline-block;
 }
 
 .a4-bot p span:nth-child(1) {
     position: relative;
-    top: -6px;
-    margin-bottom: 44px;
+    top: -0.06rem;
+    margin-bottom: 0.44rem;
     color: red;
 }
 
@@ -936,11 +924,11 @@ html{
 
 /*-------------------第五张----------------------*/
 .a5 .job{
-    font-size: 60px;
+    font-size: 0.60rem;
     position: absolute;
     left: 50%;
-    margin-left:-120px;
-    top: 150px;
+    margin-left:-1.20rem;
+    top: 1.50rem;
 }
 #a5 .job{
     -webkit-animation-name: swing;
@@ -958,139 +946,139 @@ html{
     position: relative;
 }
 .a5 div{
-    width:640px;
+    width:6.40rem;
 }
 .a5 div:nth-of-type(1)>p{
     position: absolute;
-    top:300px;
-    left: -5050px;
+    top:3rem;
+    left: -50rem;
     color:red;
-    font-size:40px;
+    font-size:0.40rem;
 }
 .a5 div:nth-of-type(1)>em{
     position: absolute;
-    top:310px;
-    font-size:40px;
-    width: 20px;
-    height: 20px;
+    top:3.10rem;
+    font-size:0.40rem;
+    width: 0.20rem;
+    height: 0.20rem;
     background:#007aff;
     border-radius: 50%;
 }
 .a5 div:nth-of-type(1)>span{
     position: absolute;
-    top:350px;
+    top:3.50rem;
     color:red;
-    right:-1050px;
-    font-size:40px;
+    right:-10.50rem;
+    font-size:0.40rem;
 }
 .a5 div:nth-of-type(1)>div{
     position: absolute;
-    top: 30px;
-    width: 134px;
-    height: 134px;
+    top: 0.30rem;
+    width: 1.34rem;
+    height: 1.34rem;
     background-size: 100% 100%;
 }
 .a5 div:nth-of-type(2){
     position: absolute;
-    top: 260px;
+    top: 2.60rem;
 
-    font-size:40px;
+    font-size:0.40rem;
 }
 .a5 div:nth-of-type(2)>p{
     position: absolute;
-    font-size:40px;
-    top:350px;
+    font-size:0.40rem;
+    top:3.50rem;
     color:gold;
-    left:-9050px;
+    left:-90.50rem;
 }
 .a5 div:nth-of-type(2)>span{
     position: absolute;
-    font-size:40px;
-    top:410px;
+    font-size:0.40rem;
+    top:4.10rem;
     color:gold;
-    right:-950px
+    right:-9.50rem;
 }
 .a5 div:nth-of-type(2)>div{
     position: absolute;
-    font-size:40px;
-    top: 330px;
-    width: 134px;
-    height: 134px;
+    font-size:0.40rem;
+    top: 3.30rem;
+    width: 1.34rem;
+    height: 1.34rem;
     background-size: 100% 100%;
 }
 .a5 div:nth-of-type(2)>em{
     position: absolute;
-    width: 20px;
-    font-size:40px;
-    top:360px;
-    height: 20px;
+    width: 0.20rem;
+    font-size:0.40rem;
+    top:3.60rem;
+    height: 0.20rem;
     background:#007aff;
     border-radius: 50%;
 }
 
 .a5 div:nth-of-type(3){
     position: absolute;
-    top:360px;
-    font-size:40px;
+    top:3.60rem;
+    font-size:0.40rem;
 }
 .a5 div:nth-of-type(3)>p{
     position: absolute;
-    top:450px;
-    left: -950px;
+    top:4.50rem;
+    left: -9.50rem;
     color:lime;
-    font-size:40px;
+    font-size:0.40rem;
 }
 .a5 div:nth-of-type(3)>em{
     position: absolute;
-    width: 20px;
-    top:460px;
-    font-size:40px;
-    height: 20px;
+    width: 0.20rem;
+    top:4.60rem;
+    font-size:0.40rem;
+    height: 0.20rem;
     background:#007aff;
     border-radius: 50%;
 }
 .a5 div:nth-of-type(3)>span{
     position: absolute;
-    top:500px;
-    right:-950px;
+    top:5rem;
+    right:-9.50rem;
     color:lime;
-    font-size:40px;
+    font-size:0.40rem;
 }
 .a5 div:nth-of-type(3)>div{
     position: absolute;
-    top:360px;
-    font-size:40px;
-    width: 134px;
-    height: 134px;
+    top:3.60rem;
+    font-size:0.40rem;
+    width: 1.34rem;
+    height: 1.34rem;
     background-size: 100% 100%;
     opacity: 0;
 }
 .a5 div:nth-of-type(4){
     position: absolute;
-    top: 49px;
-    font-size:40px;
+    top: 0.49rem;
+    font-size:0.40rem;
 }
 .a5 div:nth-of-type(4)>p{
     position: absolute;
-    top: 400px;
+    top: 4rem;
     color:blue;
-    left: -950px;
-    font-size:40px;
+    left: -9.50rem;
+    font-size:0.40rem;
 }
 .a5 div:nth-of-type(4)>span{
     position: absolute;
-    top: 450px;
-    right:-950px;
+    top: 4.50rem;
+    right:-9.50rem;
     color:blue;
-    font-size:40px;
+    font-size:0.40rem;
 }
 
 .a5 div:nth-of-type(4) em{
     position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 410px;
-    font-size:40px;
+    width: 0.20rem;
+    height: 0.20rem;
+    top: 4.10rem;
+    font-size:0.40rem;
     background:#007aff;
     border-radius: 50%;
 }

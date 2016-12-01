@@ -38,7 +38,7 @@ function move(e) {
         //当前元素移动的时候，清除掉当前元素的class
         arguments[0].className="";
         arguments[0].firstElementChild.id="";  //清除当前元素子元素的第一个儿子id
-    })
+    });
     if (changePos > 0) {/*往下滑*/
         var pos = -winH+changePos;
         //如果当前的索引是第一张就把上一张变成最后一张，否则减1
@@ -58,15 +58,14 @@ function move(e) {
 }
 function end(e) {  //手松开的时候
     oLis[this.preSIndex].style.webkitTransform ="translate(0,0)"; //平移结束
-    oLis[this.preSIndex].style.webkitTransition="2s";  //动画的时间
+    oLis[this.preSIndex].style.webkitTransition="1s";  //动画的时间
     //addEventListener添加DOM二级事件 webkitTransitionEnd 动画结束
     oLis[this.preSIndex].addEventListener('webkitTransitionEnd',function(){
         this.style.webkitTransition="";
         this.firstElementChild.id = "a"+(this.index+1);
     },false);
 }
-/*
-/!*音乐*!/
+/*音乐*/
 var beyond = document.querySelector("#beyond");
 var music = document.querySelector(".music");
 window.setTimeout(function () {
@@ -87,7 +86,6 @@ music.addEventListener("click", function () {
     }
 });
 
-*/
 
 var $cubeBox = $('.cubeBox');
 
