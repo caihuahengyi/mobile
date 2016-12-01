@@ -19,7 +19,7 @@ if (winW / winH > desW / desH) {
     arguments[0].addEventListener('touchstart', start, false);  //手触摸的时候执行start方法 false 在冒泡阶段执行
     arguments[0].addEventListener('touchmove', move, false);  //滑动的时候执行move方法
     arguments[0].addEventListener('touchend', end, false);  //手松开的时候执行end方法
-})
+});
 function start(e) {
     this.startY = e.changedTouches[0].pageY;  // changedTouches 类数组 所有触碰点集合 pageY 当前到body的垂直距离
 }
@@ -58,14 +58,15 @@ function move(e) {
 }
 function end(e) {  //手松开的时候
     oLis[this.preSIndex].style.webkitTransform ="translate(0,0)"; //平移结束
-    oLis[this.preSIndex].style.webkitTransition="1s";  //动画的时间
+    oLis[this.preSIndex].style.webkitTransition="0.5s";  //动画的时间
     //addEventListener添加DOM二级事件 webkitTransitionEnd 动画结束
     oLis[this.preSIndex].addEventListener('webkitTransitionEnd',function(){
         this.style.webkitTransition="";
         this.firstElementChild.id = "a"+(this.index+1);
     },false);
 }
-/*音乐*/
+/*
+/!*音乐*!/
 var beyond = document.querySelector("#beyond");
 var music = document.querySelector(".music");
 window.setTimeout(function () {
@@ -86,6 +87,7 @@ music.addEventListener("click", function () {
     }
 });
 
+*/
 
 var $cubeBox = $('.cubeBox');
 
